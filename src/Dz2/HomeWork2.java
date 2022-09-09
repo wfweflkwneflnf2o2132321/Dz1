@@ -1,6 +1,6 @@
 package Dz2;
 
-public class HomeWork {
+public class HomeWork2 {
     public static void main(String[] args) {
 
         byte b = 1;

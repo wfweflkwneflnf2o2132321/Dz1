@@ -3,13 +3,12 @@ package Dz3;
 public class HomeWork3 {
     public static void main(String[] args) {
 
-        int iOS = 0;
-        int Android = 1;
+        int clientOS = 0;
 
-        if (iOS == 0) {
+        if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке.");
         }
-        if (Android == 1) {
+        if (clientOS  == 1) {
             System.out.println("Установите версию приложения для Android по ссылке.");
         }
 
@@ -30,6 +29,14 @@ public class HomeWork3 {
             System.out.println("Высокосный.");
         } else {
             System.out.println("Обычный");
+        }
+        if (year % 4 == 0 && year % 100 != 0) {
+            if (year % 400 == 0) ;
+            System.out.println(year + " год является високостным!");
+        } else {
+            if (year % 4 != 0 && year % 100 == 0)
+                if (year % 400 != 0) ;
+            System.out.println(year + " год не является високостным!");
         }
 
 
@@ -83,9 +90,6 @@ public class HomeWork3 {
                 break;
             default:
                 System.out.println("Такого месяца нет");
-
         }
-
-
     }
 }
